@@ -12,7 +12,8 @@ document.querySelector('#dice').addEventListener('click',() => {
     // console.log("imagePath:" + imagePath);
 
     // päivitetään kuvan src-ominaisuus dice-img -elementille
-    document.querySelector('#dice > img').src = imagePath;
+    const imageElement = document.querySelector('#dice > img');
+    imageElement.src = imagePath;
 });
 
 
